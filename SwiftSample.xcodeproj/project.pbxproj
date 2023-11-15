@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		772DC7962AF8FD3700041657 /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7952AF8FD3700041657 /* BandwidthSDK */; };
+		772DC7982AF8FD3700041657 /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7972AF8FD3700041657 /* MVWebRTCFramework */; };
+		772DC79A2AF8FD3700041657 /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7992AF8FD3700041657 /* MVWebRTCInterface */; };
+		772DC79C2AF8FD3700041657 /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC79B2AF8FD3700041657 /* MVWebRTCNativeCall */; };
+		772DC79E2AF8FD3700041657 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC79D2AF8FD3700041657 /* WebRTC */; };
+		772DC7A12AF9409E00041657 /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A02AF9409E00041657 /* BandwidthSDK */; };
+		772DC7A32AF9409E00041657 /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A22AF9409E00041657 /* MVWebRTCFramework */; };
+		772DC7A52AF9409E00041657 /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A42AF9409E00041657 /* MVWebRTCInterface */; };
+		772DC7A72AF9409E00041657 /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A62AF9409E00041657 /* MVWebRTCNativeCall */; };
+		772DC7A92AF9409E00041657 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A82AF9409E00041657 /* WebRTC */; };
+		777FDC532AEBEEC400D66965 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 777FDC522AEBEEC400D66965 /* README.md */; };
+		778B03BF2AF57128006F409B /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03BE2AF57128006F409B /* BandwidthSDK */; };
+		778B03C12AF57128006F409B /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03C02AF57128006F409B /* MVWebRTCFramework */; };
+		778B03C32AF57128006F409B /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03C22AF57128006F409B /* MVWebRTCInterface */; };
+		778B03C52AF57128006F409B /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03C42AF57128006F409B /* MVWebRTCNativeCall */; };
+		778B03C72AF57128006F409B /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03C62AF57128006F409B /* WebRTC */; };
+		77C02EE92AE71D17004F5D9C /* SwiftSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C02EE82AE71D17004F5D9C /* SwiftSampleApp.swift */; };
+		77C02EEB2AE71D17004F5D9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C02EEA2AE71D17004F5D9C /* ContentView.swift */; };
+		77C02EED2AE71D18004F5D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C02EEC2AE71D18004F5D9C /* Assets.xcassets */; };
+		77C02EF12AE71D18004F5D9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C02EF02AE71D18004F5D9C /* Preview Assets.xcassets */; };
+		77FA25342AE72C7C00CA4C03 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 77FA25332AE72C7C00CA4C03 /* AlertToast */; };
+		77FA253A2AE72E7900CA4C03 /* AppDialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25392AE72E7900CA4C03 /* AppDialButton.swift */; };
+		77FA25402AE72F4500CA4C03 /* UINavigationBarUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA253F2AE72F4500CA4C03 /* UINavigationBarUtility.swift */; };
+		77FA25432AE72F5E00CA4C03 /* InfoPlistUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */; };
+		77FA25442AE72F5E00CA4C03 /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */; };
+		F8A1282B2AFA3B4E002D359A /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F8A1282A2AFA3B4E002D359A /* BandwidthSDK */; };
+		F8A1282D2AFA3B4E002D359A /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = F8A1282C2AFA3B4E002D359A /* MVWebRTCFramework */; };
+		F8A1282F2AFA3B4E002D359A /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = F8A1282E2AFA3B4E002D359A /* MVWebRTCInterface */; };
+		F8A128312AFA3B4E002D359A /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = F8A128302AFA3B4E002D359A /* MVWebRTCNativeCall */; };
+		F8A128332AFA3B4E002D359A /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = F8A128322AFA3B4E002D359A /* WebRTC */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		777FDC522AEBEEC400D66965 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		779D2B7E2AF54CBA00DAAD1E /* SimpleMath.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SimpleMath.xcframework; path = ../../Desktop/SimpleMath/archives/SimpleMath.xcframework; sourceTree = "<group>"; };
+		77C02EE52AE71D17004F5D9C /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C02EE82AE71D17004F5D9C /* SwiftSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSampleApp.swift; sourceTree = "<group>"; };
+		77C02EEA2AE71D17004F5D9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77C02EEC2AE71D18004F5D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77C02EEE2AE71D18004F5D9C /* SwiftSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftSample.entitlements; sourceTree = "<group>"; };
+		77C02EF02AE71D18004F5D9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		77F819882AE7328E00BACE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		77FA25392AE72E7900CA4C03 /* AppDialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDialButton.swift; sourceTree = "<group>"; };
+		77FA253F2AE72F4500CA4C03 /* UINavigationBarUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarUtility.swift; sourceTree = "<group>"; };
+		77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlistUtility.swift; sourceTree = "<group>"; };
+		77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77C02EE22AE71D17004F5D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778B03C32AF57128006F409B /* MVWebRTCInterface in Frameworks */,
+				772DC79A2AF8FD3700041657 /* MVWebRTCInterface in Frameworks */,
+				F8A1282B2AFA3B4E002D359A /* BandwidthSDK in Frameworks */,
+				772DC7A52AF9409E00041657 /* MVWebRTCInterface in Frameworks */,
+				772DC7A32AF9409E00041657 /* MVWebRTCFramework in Frameworks */,
+				772DC79E2AF8FD3700041657 /* WebRTC in Frameworks */,
+				772DC7A12AF9409E00041657 /* BandwidthSDK in Frameworks */,
+				F8A128312AFA3B4E002D359A /* MVWebRTCNativeCall in Frameworks */,
+				F8A1282F2AFA3B4E002D359A /* MVWebRTCInterface in Frameworks */,
+				772DC7982AF8FD3700041657 /* MVWebRTCFramework in Frameworks */,
+				F8A128332AFA3B4E002D359A /* WebRTC in Frameworks */,
+				772DC7A72AF9409E00041657 /* MVWebRTCNativeCall in Frameworks */,
+				778B03C72AF57128006F409B /* WebRTC in Frameworks */,
+				778B03C12AF57128006F409B /* MVWebRTCFramework in Frameworks */,
+				772DC7962AF8FD3700041657 /* BandwidthSDK in Frameworks */,
+				778B03C52AF57128006F409B /* MVWebRTCNativeCall in Frameworks */,
+				772DC79C2AF8FD3700041657 /* MVWebRTCNativeCall in Frameworks */,
+				772DC7A92AF9409E00041657 /* WebRTC in Frameworks */,
+				F8A1282D2AFA3B4E002D359A /* MVWebRTCFramework in Frameworks */,
+				77FA25342AE72C7C00CA4C03 /* AlertToast in Frameworks */,
+				778B03BF2AF57128006F409B /* BandwidthSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		779DB63D2AF53F7A00689D33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				779D2B7E2AF54CBA00DAAD1E /* SimpleMath.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77C02EDC2AE71D17004F5D9C = {
+			isa = PBXGroup;
+			children = (
+				777FDC522AEBEEC400D66965 /* README.md */,
+				77C02EE72AE71D17004F5D9C /* SwiftSample */,
+				77C02EE62AE71D17004F5D9C /* Products */,
+				779DB63D2AF53F7A00689D33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77C02EE62AE71D17004F5D9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77C02EE52AE71D17004F5D9C /* SwiftSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77C02EE72AE71D17004F5D9C /* SwiftSample */ = {
+			isa = PBXGroup;
+			children = (
+				77F819882AE7328E00BACE69 /* Info.plist */,
+				77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */,
+				77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */,
+				77FA253F2AE72F4500CA4C03 /* UINavigationBarUtility.swift */,
+				77C02EE82AE71D17004F5D9C /* SwiftSampleApp.swift */,
+				77C02EEA2AE71D17004F5D9C /* ContentView.swift */,
+				77C02EEC2AE71D18004F5D9C /* Assets.xcassets */,
+				77C02EEE2AE71D18004F5D9C /* SwiftSample.entitlements */,
+				77C02EEF2AE71D18004F5D9C /* Preview Content */,
+				77FA25392AE72E7900CA4C03 /* AppDialButton.swift */,
+			);
+			path = SwiftSample;
+			sourceTree = "<group>";
+		};
+		77C02EEF2AE71D18004F5D9C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				77C02EF02AE71D18004F5D9C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77C02EE42AE71D17004F5D9C /* SwiftSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77C02EF42AE71D18004F5D9C /* Build configuration list for PBXNativeTarget "SwiftSample" */;
+			buildPhases = (
+				77C02EE12AE71D17004F5D9C /* Sources */,
+				77C02EE22AE71D17004F5D9C /* Frameworks */,
+				77C02EE32AE71D17004F5D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSample;
+			packageProductDependencies = (
+				77FA25332AE72C7C00CA4C03 /* AlertToast */,
+				778B03BE2AF57128006F409B /* BandwidthSDK */,
+				778B03C02AF57128006F409B /* MVWebRTCFramework */,
+				778B03C22AF57128006F409B /* MVWebRTCInterface */,
+				778B03C42AF57128006F409B /* MVWebRTCNativeCall */,
+				778B03C62AF57128006F409B /* WebRTC */,
+				772DC7952AF8FD3700041657 /* BandwidthSDK */,
+				772DC7972AF8FD3700041657 /* MVWebRTCFramework */,
+				772DC7992AF8FD3700041657 /* MVWebRTCInterface */,
+				772DC79B2AF8FD3700041657 /* MVWebRTCNativeCall */,
+				772DC79D2AF8FD3700041657 /* WebRTC */,
+				772DC7A02AF9409E00041657 /* BandwidthSDK */,
+				772DC7A22AF9409E00041657 /* MVWebRTCFramework */,
+				772DC7A42AF9409E00041657 /* MVWebRTCInterface */,
+				772DC7A62AF9409E00041657 /* MVWebRTCNativeCall */,
+				772DC7A82AF9409E00041657 /* WebRTC */,
+				F8A1282A2AFA3B4E002D359A /* BandwidthSDK */,
+				F8A1282C2AFA3B4E002D359A /* MVWebRTCFramework */,
+				F8A1282E2AFA3B4E002D359A /* MVWebRTCInterface */,
+				F8A128302AFA3B4E002D359A /* MVWebRTCNativeCall */,
+				F8A128322AFA3B4E002D359A /* WebRTC */,
+			);
+			productName = SwiftSample;
+			productReference = 77C02EE52AE71D17004F5D9C /* SwiftSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77C02EDD2AE71D17004F5D9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					77C02EE42AE71D17004F5D9C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 77C02EE02AE71D17004F5D9C /* Build configuration list for PBXProject "SwiftSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77C02EDC2AE71D17004F5D9C;
+			packageReferences = (
+				77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
+			);
+			productRefGroup = 77C02EE62AE71D17004F5D9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77C02EE42AE71D17004F5D9C /* SwiftSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77C02EE32AE71D17004F5D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777FDC532AEBEEC400D66965 /* README.md in Resources */,
+				77C02EF12AE71D18004F5D9C /* Preview Assets.xcassets in Resources */,
+				77C02EED2AE71D18004F5D9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77C02EE12AE71D17004F5D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77FA253A2AE72E7900CA4C03 /* AppDialButton.swift in Sources */,
+				77C02EEB2AE71D17004F5D9C /* ContentView.swift in Sources */,
+				77FA25442AE72F5E00CA4C03 /* ColorUtility.swift in Sources */,
+				77FA25432AE72F5E00CA4C03 /* InfoPlistUtility.swift in Sources */,
+				77FA25402AE72F4500CA4C03 /* UINavigationBarUtility.swift in Sources */,
+				77C02EE92AE71D17004F5D9C /* SwiftSampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		77C02EF22AE71D18004F5D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77C02EF32AE71D18004F5D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		77C02EF52AE71D18004F5D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftSample/SwiftSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftSample/Preview Content\"";
+				DEVELOPMENT_TEAM = T4948NL6C3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftSample/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandwidth.SwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		77C02EF62AE71D18004F5D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftSample/SwiftSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftSample/Preview Content\"";
+				DEVELOPMENT_TEAM = T4948NL6C3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftSample/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandwidth.SwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77C02EE02AE71D17004F5D9C /* Build configuration list for PBXProject "SwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77C02EF22AE71D18004F5D9C /* Debug */,
+				77C02EF32AE71D18004F5D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77C02EF42AE71D18004F5D9C /* Build configuration list for PBXNativeTarget "SwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77C02EF52AE71D18004F5D9C /* Debug */,
+				77C02EF62AE71D18004F5D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+		F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Bandwidth/swift-webrtc-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		772DC7952AF8FD3700041657 /* BandwidthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BandwidthSDK;
+		};
+		772DC7972AF8FD3700041657 /* MVWebRTCFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCFramework;
+		};
+		772DC7992AF8FD3700041657 /* MVWebRTCInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCInterface;
+		};
+		772DC79B2AF8FD3700041657 /* MVWebRTCNativeCall */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCNativeCall;
+		};
+		772DC79D2AF8FD3700041657 /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WebRTC;
+		};
+		772DC7A02AF9409E00041657 /* BandwidthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BandwidthSDK;
+		};
+		772DC7A22AF9409E00041657 /* MVWebRTCFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCFramework;
+		};
+		772DC7A42AF9409E00041657 /* MVWebRTCInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCInterface;
+		};
+		772DC7A62AF9409E00041657 /* MVWebRTCNativeCall */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCNativeCall;
+		};
+		772DC7A82AF9409E00041657 /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WebRTC;
+		};
+		778B03BE2AF57128006F409B /* BandwidthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BandwidthSDK;
+		};
+		778B03C02AF57128006F409B /* MVWebRTCFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCFramework;
+		};
+		778B03C22AF57128006F409B /* MVWebRTCInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCInterface;
+		};
+		778B03C42AF57128006F409B /* MVWebRTCNativeCall */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCNativeCall;
+		};
+		778B03C62AF57128006F409B /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WebRTC;
+		};
+		77FA25332AE72C7C00CA4C03 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+		F8A1282A2AFA3B4E002D359A /* BandwidthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
+			productName = BandwidthSDK;
+		};
+		F8A1282C2AFA3B4E002D359A /* MVWebRTCFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
+			productName = MVWebRTCFramework;
+		};
+		F8A1282E2AFA3B4E002D359A /* MVWebRTCInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
+			productName = MVWebRTCInterface;
+		};
+		F8A128302AFA3B4E002D359A /* MVWebRTCNativeCall */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
+			productName = MVWebRTCNativeCall;
+		};
+		F8A128322AFA3B4E002D359A /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
+			productName = WebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 77C02EDD2AE71D17004F5D9C /* Project object */;
+}

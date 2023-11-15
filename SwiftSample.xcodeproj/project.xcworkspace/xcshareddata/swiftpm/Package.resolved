@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast.git",
+      "state" : {
+        "revision" : "b39252eacd159904afd7d718bba0afabb87f2f2f",
+        "version" : "1.3.9"
+      }
+    },
+    {
+      "identity" : "swift-webrtc-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Bandwidth/swift-webrtc-sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "42cf168a175d5aea6edc17fac2d1e9fb3d5f5e21"
+      }
+    }
+  ],
+  "version" : 2
+}
