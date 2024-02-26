@@ -7,21 +7,21 @@
 	<key>NSCameraUsageDescription</key>
 	<string>The Application requires camera access for full video calls functionality</string>
 	<key>connection.header.pass</key>
-	<string>gM4gqTXeQ7snBwGkYncWPQMweYA2qDCK</string>
+	<string>xxxx</string>
 	<key>connection.header.user</key>
-	<string>9r2VRW2aczrEkzscRVasbBxrhUHYCQ8k</string>
+	<string>xxxx</string>
 	<key>connection.token</key>
-	<string>https://l79ktfunie.execute-api.eu-west-1.amazonaws.com/default/Fetch-token-in-app-calling</string>
+	<string>https://example.com</string>
 	<key>connection.port</key>
 	<integer>5061</integer>
 	<key>connection.domain</key>
 	<string>sbc.webrtc-app.bandwidth.com</string>
 	<key>account.password</key>
-	<string>+441138688226</string>
+	<string>+1234</string>
 	<key>account.display-name</key>
-	<string>+441138688226</string>
+	<string>+1234</string>
 	<key>account.username</key>
-	<string>+441138688226</string>
+	<string>+1234</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>voip</string>
