@@ -1,4 +1,5 @@
 {
+  "originHash" : "660dac012e9087df9732b4cba386c9f08a38de22198cdefcf15dcdbb73ceccc0",
   "pins" : [
     {
       "identity" : "alerttoast",
@@ -15,9 +16,9 @@
       "location" : "https://github.com/Bandwidth-Samples/swift-webrtc-sdk",
       "state" : {
         "branch" : "main",
-        "revision" : "42cf168a175d5aea6edc17fac2d1e9fb3d5f5e21"
+        "revision" : "12ce109d0b8b8db9b155df2752d254c0d8e8b791"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

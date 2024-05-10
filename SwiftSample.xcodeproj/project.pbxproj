@@ -32,11 +32,6 @@
 		77FA25402AE72F4500CA4C03 /* UINavigationBarUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA253F2AE72F4500CA4C03 /* UINavigationBarUtility.swift */; };
 		77FA25432AE72F5E00CA4C03 /* InfoPlistUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */; };
 		77FA25442AE72F5E00CA4C03 /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */; };
-		F8A1282B2AFA3B4E002D359A /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F8A1282A2AFA3B4E002D359A /* BandwidthSDK */; };
-		F8A1282D2AFA3B4E002D359A /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = F8A1282C2AFA3B4E002D359A /* MVWebRTCFramework */; };
-		F8A1282F2AFA3B4E002D359A /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = F8A1282E2AFA3B4E002D359A /* MVWebRTCInterface */; };
-		F8A128312AFA3B4E002D359A /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = F8A128302AFA3B4E002D359A /* MVWebRTCNativeCall */; };
-		F8A128332AFA3B4E002D359A /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = F8A128322AFA3B4E002D359A /* WebRTC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,15 +57,11 @@
 			files = (
 				778B03C32AF57128006F409B /* MVWebRTCInterface in Frameworks */,
 				772DC79A2AF8FD3700041657 /* MVWebRTCInterface in Frameworks */,
-				F8A1282B2AFA3B4E002D359A /* BandwidthSDK in Frameworks */,
 				772DC7A52AF9409E00041657 /* MVWebRTCInterface in Frameworks */,
 				772DC7A32AF9409E00041657 /* MVWebRTCFramework in Frameworks */,
 				772DC79E2AF8FD3700041657 /* WebRTC in Frameworks */,
 				772DC7A12AF9409E00041657 /* BandwidthSDK in Frameworks */,
-				F8A128312AFA3B4E002D359A /* MVWebRTCNativeCall in Frameworks */,
-				F8A1282F2AFA3B4E002D359A /* MVWebRTCInterface in Frameworks */,
 				772DC7982AF8FD3700041657 /* MVWebRTCFramework in Frameworks */,
-				F8A128332AFA3B4E002D359A /* WebRTC in Frameworks */,
 				772DC7A72AF9409E00041657 /* MVWebRTCNativeCall in Frameworks */,
 				778B03C72AF57128006F409B /* WebRTC in Frameworks */,
 				778B03C12AF57128006F409B /* MVWebRTCFramework in Frameworks */,
@@ -78,7 +69,6 @@
 				778B03C52AF57128006F409B /* MVWebRTCNativeCall in Frameworks */,
 				772DC79C2AF8FD3700041657 /* MVWebRTCNativeCall in Frameworks */,
 				772DC7A92AF9409E00041657 /* WebRTC in Frameworks */,
-				F8A1282D2AFA3B4E002D359A /* MVWebRTCFramework in Frameworks */,
 				77FA25342AE72C7C00CA4C03 /* AlertToast in Frameworks */,
 				778B03BF2AF57128006F409B /* BandwidthSDK in Frameworks */,
 			);
@@ -171,11 +161,6 @@
 				772DC7A42AF9409E00041657 /* MVWebRTCInterface */,
 				772DC7A62AF9409E00041657 /* MVWebRTCNativeCall */,
 				772DC7A82AF9409E00041657 /* WebRTC */,
-				F8A1282A2AFA3B4E002D359A /* BandwidthSDK */,
-				F8A1282C2AFA3B4E002D359A /* MVWebRTCFramework */,
-				F8A1282E2AFA3B4E002D359A /* MVWebRTCInterface */,
-				F8A128302AFA3B4E002D359A /* MVWebRTCNativeCall */,
-				F8A128322AFA3B4E002D359A /* WebRTC */,
 			);
 			productName = SwiftSample;
 			productReference = 77C02EE52AE71D17004F5D9C /* SwiftSample.app */;
@@ -207,7 +192,7 @@
 			mainGroup = 77C02EDC2AE71D17004F5D9C;
 			packageReferences = (
 				77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */,
-				F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
+				F8FFD9592BEE764A00D7E251 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
 			);
 			productRefGroup = 77C02EE62AE71D17004F5D9C /* Products */;
 			projectDirPath = "";
@@ -494,9 +479,9 @@
 				minimumVersion = 1.3.9;
 			};
 		};
-		F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
+		F8FFD9592BEE764A00D7E251 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Bandwidth/swift-webrtc-sdk";
+			repositoryURL = "https://github.com/Bandwidth-Samples/swift-webrtc-sdk";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -569,31 +554,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
-		};
-		F8A1282A2AFA3B4E002D359A /* BandwidthSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
-			productName = BandwidthSDK;
-		};
-		F8A1282C2AFA3B4E002D359A /* MVWebRTCFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
-			productName = MVWebRTCFramework;
-		};
-		F8A1282E2AFA3B4E002D359A /* MVWebRTCInterface */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
-			productName = MVWebRTCInterface;
-		};
-		F8A128302AFA3B4E002D359A /* MVWebRTCNativeCall */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
-			productName = MVWebRTCNativeCall;
-		};
-		F8A128322AFA3B4E002D359A /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8A128292AFA3B4E002D359A /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */;
-			productName = WebRTC;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
