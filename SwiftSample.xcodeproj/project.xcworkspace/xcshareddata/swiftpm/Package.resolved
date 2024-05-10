@@ -12,7 +12,7 @@
     {
       "identity" : "swift-webrtc-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Bandwidth/swift-webrtc-sdk",
+      "location" : "https://github.com/Bandwidth-Samples/swift-webrtc-sdk",
       "state" : {
         "branch" : "main",
         "revision" : "42cf168a175d5aea6edc17fac2d1e9fb3d5f5e21"
