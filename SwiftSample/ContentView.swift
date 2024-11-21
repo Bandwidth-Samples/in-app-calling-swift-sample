@@ -82,7 +82,7 @@ struct ContentView: View {
                                            .cornerRadius(10)
                 }.onChange(of: isSecondViewActive){newValue in
                     if !newValue {
-                        print("Returned from Second Screen")
+                        print(resultFromRingingScreen)
                         // Place additional actions here if needed
                     }}
             }

@@ -22,6 +22,8 @@ struct RingingView: View {
             HStack(content: {
                 Button(action: {
                     print("Accept")
+                    result = "Result received from Second Screen = Accept"
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Accept")
                         .font(.title)
@@ -32,7 +34,8 @@ struct RingingView: View {
                 }
                 Spacer()
                 Button(action: {
-                    print("Declined")
+                    result = "Result received from Second Screen = Declined"
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Declined")
                         .font(.title)
