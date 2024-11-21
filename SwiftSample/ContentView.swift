@@ -15,6 +15,8 @@ struct ContentView: View {
     @Binding var callState: CallState
     @Binding var isMuted: Bool
     @Binding var isHolded: Bool
+    @State private var resultFromRingingScreen: String = ""
+    @State private var isSecondViewActive: Bool = false
     @State private var showToast = false
     var makeCall: () -> Void
     var terminateCall: () -> Void
@@ -71,6 +73,18 @@ struct ContentView: View {
                                 terminateCall: self.terminateCall,
                                 onSendDTMF: self.onSendDTMF)
                 Spacer()
+                NavigationLink( destination: RingingView(result: $resultFromRingingScreen),isActive: $isSecondViewActive){
+                    Text("Go to Second Screen")
+                                           .font(.title)
+                                           .padding()
+                                           .background(Color.blue)
+                                           .foregroundColor(.white)
+                                           .cornerRadius(10)
+                }.onChange(of: isSecondViewActive){newValue in
+                    if !newValue {
+                        print("Returned from Second Screen")
+                        // Place additional actions here if needed
+                    }}
             }
             .padding()
             .navigationBarTitle("Sample App", displayMode: .inline)
