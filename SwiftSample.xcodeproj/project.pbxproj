@@ -37,6 +37,7 @@
 		CEA997B82CEF4FE400959FCA /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997B72CEF4FE400959FCA /* FirebaseCore */; };
 		CEA997BA2CEF4FE400959FCA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997B92CEF4FE400959FCA /* FirebaseFirestore */; };
 		CEA997BC2CEF4FE400959FCA /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997BB2CEF4FE400959FCA /* FirebaseMessaging */; };
+		CEA997BE2CF59EEF00959FCA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA997BD2CF59EE600959FCA /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
 		CE1476962CE4DC720014B2F0 /* RingingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingView.swift; sourceTree = "<group>"; };
 		CEA997B52CEF4EF900959FCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEA997BD2CF59EE600959FCA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				CEA997B52CEF4EF900959FCA /* GoogleService-Info.plist */,
 				77F819882AE7328E00BACE69 /* Info.plist */,
 				77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */,
+				CEA997BD2CF59EE600959FCA /* NotificationManager.swift */,
 				77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */,
 				77FA253F2AE72F4500CA4C03 /* UINavigationBarUtility.swift */,
 				77C02EE82AE71D17004F5D9C /* SwiftSampleApp.swift */,
@@ -244,6 +247,7 @@
 				CE1476972CE4DC720014B2F0 /* RingingView.swift in Sources */,
 				77FA25432AE72F5E00CA4C03 /* InfoPlistUtility.swift in Sources */,
 				77FA25402AE72F4500CA4C03 /* UINavigationBarUtility.swift in Sources */,
+				CEA997BE2CF59EEF00959FCA /* NotificationManager.swift in Sources */,
 				77C02EE92AE71D17004F5D9C /* SwiftSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,12 +387,14 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftSample/Preview Content\"";
-				DEVELOPMENT_TEAM = T4948NL6C3;
+				DEVELOPMENT_TEAM = 68WYRXXUN4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftSample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The Application requires camera access for full video calls functionality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The application requires microphone access for full call functionality";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -430,12 +436,14 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftSample/Preview Content\"";
-				DEVELOPMENT_TEAM = T4948NL6C3;
+				DEVELOPMENT_TEAM = 68WYRXXUN4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftSample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The Application requires camera access for full video calls functionality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The application requires microphone access for full call functionality";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

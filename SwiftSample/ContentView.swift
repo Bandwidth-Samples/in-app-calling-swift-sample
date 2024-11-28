@@ -55,7 +55,7 @@ struct ContentView: View {
         self.onSendDTMF = onSendDTMF
         UINavigationBar.applyCustomAppearance()
     }
-
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -73,13 +73,13 @@ struct ContentView: View {
                                 terminateCall: self.terminateCall,
                                 onSendDTMF: self.onSendDTMF)
                 Spacer()
-                NavigationLink( destination: RingingView(result: $resultFromRingingScreen),isActive: $isSecondViewActive){
+                NavigationLink( destination: RingingView(result: $resultFromRingingScreen, number: $phoneNumber),isActive: $isSecondViewActive){
                     Text("Go to Second Screen")
-                                           .font(.title)
-                                           .padding()
-                                           .background(Color.blue)
-                                           .foregroundColor(.white)
-                                           .cornerRadius(10)
+                        .font(.title)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                 }.onChange(of: isSecondViewActive){newValue in
                     if !newValue {
                         print(resultFromRingingScreen)
@@ -102,7 +102,7 @@ struct CustomButton: View {
     let active: Bool
     let disabled: Bool
     var action: () -> Void
-
+    
     var body: some View {
         Button(action: actionIfEnabled) {
             HStack {
@@ -114,7 +114,7 @@ struct CustomButton: View {
         }
         .disabled(disabled)
     }
-
+    
     private func actionIfEnabled() {
         if !disabled {
             self.action()
@@ -145,9 +145,9 @@ extension ContentView {
         private func isDisabled() -> Bool {
             return callState != .connected
         }
-
+        
         private var currentStatusText: String {
-           return isMuted ? "Mute" : (isHolded ? "On hold" : callState.description)
+            return isMuted ? "Mute" : (isHolded ? "On hold" : callState.description)
         }
         
         private var muteButtonText: String {
@@ -158,23 +158,23 @@ extension ContentView {
             return isHolded ? "Unhold" : "Hold"
         }
     }
-
+    
     /// Represents a custom text field for adding a phone number.
     struct CustomTextField: View {
         @Binding var phoneNumber: String
-
+        
         var body: some View {
             VStack(alignment: .center, spacing: 10) {
                 Text("Add number".uppercased())
                     .font(.title3)
                     .fontWeight(.bold)
                     .foregroundColor(Color.bwBlue)
-
+                
                 HStack {
                     Image(systemName: "plus")
                         .foregroundColor(.bwGrayDark)
                         .padding(.leading, 8)
-
+                    
                     if phoneNumber.isEmpty {
                         Text("Phone number")
                             .font(.title3)
@@ -186,7 +186,7 @@ extension ContentView {
                             .foregroundColor(Color.bwBlack)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
-
+                    
                     Spacer()
                 }
                 .padding(10)
@@ -195,7 +195,7 @@ extension ContentView {
                         .stroke(Color.bwGrayDark, lineWidth: 1)
                 )
                 .frame(maxWidth: .infinity)
-
+                
                 Text("Add e163 number format")
                     .font(.footnote)
                     .italic()
@@ -251,7 +251,7 @@ struct GridButtonsView: View {
             return .red
         }
     }
-
+    
     private func callAction() -> Void {
         switch callState {
         case .null:
@@ -267,7 +267,7 @@ struct GridButtonsView: View {
             terminateCall()
         }
     }
-
+    
     private func pushDial(_ dial: DTMF) {
         switch callState {
         case .null:
@@ -277,13 +277,13 @@ struct GridButtonsView: View {
         default: break
         }
     }
-
+    
     private func popNumber() {
         if !phoneNumber.isEmpty {
             phoneNumber.removeLast()
         }
     }
-
+    
     private func makeCallIfPossible() {
         guard !phoneNumber.isEmpty else {
             showToast.toggle()
