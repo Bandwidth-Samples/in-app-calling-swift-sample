@@ -17,17 +17,48 @@ class AppDelegate: NSObject, UIApplicationDelegate, MessagingDelegate, UNUserNot
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
         UNUserNotificationCenter.current().delegate = self
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, _ in }
         return true
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-            Messaging.messaging().apnsToken = deviceToken
+        Messaging.messaging().apnsToken = deviceToken
     }
     
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         if let fcm = Messaging.messaging().fcmToken {
-                print("fcm", fcm)
-            }
+            print("fcm", fcm)
+        }
+    }
+    
+    // Foreground notification handling
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+    ) {
+        // Handle the notification when the app is in the foreground
+        print("Foreground Notification Received: \(notification.request.content.userInfo)")
+        completionHandler([.badge, .sound, .banner]) // Show banner even in foreground
+    }
+    
+    // Background notification handling
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        // Handle notification click
+        let userInfo = response.notification.request.content.userInfo
+        print("Notification Clicked: \(userInfo)")
+        
+        // Redirect based on the notification data
+        if let redirectPage = userInfo["redirect"] as? String {
+            NotificationCenter.default.post(name: Notification.Name("NotificationRedirect"), object: redirectPage)
+        }
+        
+        completionHandler()
     }
 }
 
@@ -60,7 +91,10 @@ struct SwiftSampleApp: App {
             }
         }
     }
-
+    
+    init(){
+        configureBandwidthUA()
+    }
     /// Terminates the active call.
     func terminateCall() {
         if let session = session {
@@ -68,7 +102,7 @@ struct SwiftSampleApp: App {
             session.terminate()
         }
     }
-
+    
     /// Toggles the mute state of the call and updates the BandwidthUA session.
     func onMuteCallback() {
         if let session = session {
@@ -76,7 +110,7 @@ struct SwiftSampleApp: App {
             session.muteAudio(mute: isMuted)
         }
     }
-
+    
     /// Toggles the hold state of the call and updates the BandwidthUA session.
     func onHoldCallback() {
         if let session = session {
@@ -84,16 +118,21 @@ struct SwiftSampleApp: App {
             session.hold(hold: isHolded)
         }
     }
-
+    
     /// Initiates a call using BandwidthUA.
     func makeCall() {
-        configureBandwidthUA()
-        let formatPhoneNumber = "+" + phoneNumber
-        session = bandwidthUA.makeCall(formatPhoneNumber, domain: extractStringValue(forKey: .connectionDomain))
-        if let session = session {
-            session.addSessionEventListener(listener: self)
-        } else {
-            fatalError("Failed to create a session.")
+        if let authTokenResponse = getOAuthTokenFromURL(extractStringValue(forKey: .connectionToken),
+                                                        headerUser: extractStringValue(forKey: .connectionHeaderUser),
+                                                        headerPass: extractStringValue(forKey: .connectionHeaderPass)) {
+            let formatPhoneNumber = "+" + phoneNumber
+            session = bandwidthUA.makeCall(formatPhoneNumber,
+                                           domain: extractStringValue(forKey: .connectionDomain),
+                                           authToken: authTokenResponse.access_token)
+            if let session = session {
+                session.addSessionEventListener(listener: self)
+            } else {
+                fatalError("Failed to create a session.")
+            }
         }
     }
     
@@ -105,7 +144,7 @@ struct SwiftSampleApp: App {
             fatalError("Failed to create a session.")
         }
     }
-
+    
     /// Resets the call state, including phone number, mute, and hold.
     private func resetCallState() {
         callState = .null
@@ -113,27 +152,63 @@ struct SwiftSampleApp: App {
         isMuted = false
         isHolded = false
     }
-
+    
     /// Configures the BandwidthUA instance.
     private func configureBandwidthUA() {
         do {
             try bandwidthUA.configureAudioCodesUA(proxyAddress: extractStringValue(forKey: .connectionDomain),
-                                              serverDomain: extractStringValue(forKey: .connectionDomain),
-                                              port: Int32(extractIntValue(forKey: .connectionPort)),
-                                              transport: .tls,
-                                              logLevel: .verbose)
-            
-            try bandwidthUA.configureOAuthAuthentication(username: extractStringValue(forKey: .accountUsername),
-                                                     displayName: extractStringValue(forKey: .accountDisplayName),
-                                                     password: extractStringValue(forKey: .accountPassword),
-                                                     authName: extractStringValue(forKey: .accountUsername),
-                                                     connectionUrl: extractStringValue(forKey: .connectionToken),
-                                                     headerUser: extractStringValue(forKey: .connectionHeaderUser),
-                                                     headerPass: extractStringValue(forKey: .connectionHeaderPass))
+                                                  serverDomain: extractStringValue(forKey: .connectionDomain),
+                                                  port: Int32(extractIntValue(forKey: .connectionPort)),
+                                                  transport: .tls,
+                                                  logLevel: .verbose)
+            try bandwidthUA.configureAccount(username: extractStringValue(forKey: .accountUsername),
+                                             displayName: extractStringValue(forKey: .accountDisplayName),
+                                             password: extractStringValue(forKey: .accountPassword),
+                                             authName: extractStringValue(forKey: .accountUsername))
         } catch {
             // Handle the error here
             print("An error occurred: \(error)")
         }
+    }
+    
+    private func getOAuthTokenFromURL(_ connectionUrl: String, headerUser: String?, headerPass: String?) -> AuthTokenResponse? {
+        guard let url = URL(string: connectionUrl) else {
+            return nil
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        
+        if let user = headerUser, let password = headerPass {
+            let loginString = "\(user):\(password)"
+            if let loginData = loginString.data(using: .utf8) {
+                let base64LoginString = loginData.base64EncodedString()
+                request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+                let bodyParameters = "grant_type=client_credentials"
+                request.httpBody = bodyParameters.data(using: .utf8)
+            }
+        }
+        
+        var authTokenResponse: AuthTokenResponse? = nil
+        let semaphore = DispatchSemaphore(value: 0)
+        
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+            if let data = data {
+                do {
+                    let decoder = JSONDecoder()
+                    let result = try decoder.decode(AuthTokenResponse.self, from: data)
+                    authTokenResponse = result
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            semaphore.signal()
+        }
+        task.resume()
+        
+        semaphore.wait()
+        return authTokenResponse
     }
 }
 
@@ -142,9 +217,9 @@ extension SwiftSampleApp: BandwidthSessionEventListener {
     /// - Parameter session: The BandwidthSession object for the terminated call.
     func callTerminated(session: BandwidthSession?) {
         resetCallState()
-        bandwidthUA.logout()
+        //bandwidthUA.logout()
     }
-
+    
     /// Called when a call is in progress.
     /// - Parameter session: The BandwidthSession object for the ongoing call.
     func callProgress(session: BandwidthSession?) {
@@ -152,7 +227,7 @@ extension SwiftSampleApp: BandwidthSessionEventListener {
             callState = session.callState
         }
     }
-
+    
     /// Called when an incoming notification is received.
     /// - Parameters:
     ///   - event: The NotifyEvent received.
@@ -161,4 +236,8 @@ extension SwiftSampleApp: BandwidthSessionEventListener {
         print("incomingNotify")
         // TODO: Handle incoming notifications
     }
+}
+
+internal struct AuthTokenResponse: Codable {
+    let access_token: String
 }
