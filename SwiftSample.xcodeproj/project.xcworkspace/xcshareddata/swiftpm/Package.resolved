@@ -1,5 +1,5 @@
 {
-  "originHash" : "660dac012e9087df9732b4cba386c9f08a38de22198cdefcf15dcdbb73ceccc0",
+  "originHash" : "4df900d007b29fb336b9f6771d9523f02fbe0ff083a3b7da8d95348c7f794579",
   "pins" : [
     {
       "identity" : "alerttoast",
@@ -13,10 +13,10 @@
     {
       "identity" : "swift-webrtc-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Bandwidth-Samples/swift-webrtc-sdk",
+      "location" : "https://github.com/aman-capg/swift-webrtc-sdk.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "12ce109d0b8b8db9b155df2752d254c0d8e8b791"
+        "branch" : "WEBRTC-167",
+        "revision" : "32e958ec5ef053ba5dd09c000eca2c8b24fb967e"
       }
     }
   ],
