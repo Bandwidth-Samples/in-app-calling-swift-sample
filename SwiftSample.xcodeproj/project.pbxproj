@@ -192,7 +192,7 @@
 			mainGroup = 77C02EDC2AE71D17004F5D9C;
 			packageReferences = (
 				77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */,
-				F8FFD9592BEE764A00D7E251 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
+				CE115EEA2D391E9D00A42888 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
 			);
 			productRefGroup = 77C02EE62AE71D17004F5D9C /* Products */;
 			projectDirPath = "";
@@ -479,11 +479,11 @@
 				minimumVersion = 1.3.9;
 			};
 		};
-		F8FFD9592BEE764A00D7E251 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
+		CE115EEA2D391E9D00A42888 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Bandwidth-Samples/swift-webrtc-sdk";
+			repositoryURL = "https://github.com/aman-capg/swift-webrtc-sdk.git";
 			requirement = {
-				branch = main;
+				branch = "WEBRTC-167";
 				kind = branch;
 			};
 		};
