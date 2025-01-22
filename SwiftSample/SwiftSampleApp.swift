@@ -75,7 +75,7 @@ struct SwiftSampleApp: App {
             if let session = session {
                 session.addSessionEventListener(listener: self)
             } else {
-                fatalError("Failed to create a session.")
+                fatalError("[SwiftSample] Failed to create a session.")
             }
         }
     }
@@ -85,7 +85,7 @@ struct SwiftSampleApp: App {
         if let session = session {
             session.sendDTMF(dtmf: dtmf)
         } else {
-            fatalError("Failed to create a session.")
+            fatalError("[SwiftSample] Failed to create a session.")
         }
     }
     
@@ -111,7 +111,7 @@ struct SwiftSampleApp: App {
                                              authName: extractStringValue(forKey: .accountUsername))
         } catch {
             // Handle the error here
-            print("An error occurred: \(error)")
+            print("[SwiftSample] An error occurred: \(error)")
         }
     }
     
@@ -176,7 +176,7 @@ extension SwiftSampleApp: BandwidthSessionEventListener {
     ///   - event: The NotifyEvent received.
     ///   - dtmfValue: The DTMF value received, if any.
     func incomingNotify(event: NotifyEvent?, dtmfValue: String?) {
-        print("incomingNotify")
+        print("[SwiftSample] incomingNotify")
         // TODO: Handle incoming notifications
     }
 }
