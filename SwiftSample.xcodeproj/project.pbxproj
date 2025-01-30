@@ -181,6 +181,7 @@
 			packageReferences = (
 				77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */,
 				CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CE6EFFB92D4B5E5100CEED77 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
 			);
 			productRefGroup = 77C02EE62AE71D17004F5D9C /* Products */;
 			projectDirPath = "";
@@ -472,6 +473,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.3.9;
+			};
+		};
+		CE6EFFB92D4B5E5100CEED77 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aman-capg/swift-webrtc-sdk.git";
+			requirement = {
+				branch = "WEBRTC-167";
+				kind = branch;
 			};
 		};
 		CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {

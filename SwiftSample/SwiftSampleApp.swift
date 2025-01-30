@@ -29,7 +29,10 @@ class AppDelegate: NSObject, UIApplicationDelegate, MessagingDelegate, UNUserNot
         }
         
         Messaging.messaging().delegate = self
-        
+        // Handle app launch from notification
+        if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
+            handleIncomingCallNotification(userInfo: notification) // ✅ Handle notification
+        }
         return true
     }
     
@@ -134,7 +137,7 @@ struct SwiftSampleApp: App {
                 isSecondViewActive = false
                 makeCall()
             }.onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("DeclinedCall"))) { notification in
-                print("[SwiftSample] Accept Call from \($phoneNumber)")
+                print("[SwiftSample] Declined Call from \($phoneNumber)")
                 phoneNumber = ""
                 isSecondViewActive = false
             }
