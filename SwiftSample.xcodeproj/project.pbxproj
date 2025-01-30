@@ -181,7 +181,6 @@
 			packageReferences = (
 				77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */,
 				CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				CE76C74C2D2D59830085F3E6 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
 			);
 			productRefGroup = 77C02EE62AE71D17004F5D9C /* Products */;
 			projectDirPath = "";
@@ -357,7 +356,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftSample/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q2MF3NHN7B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
@@ -406,7 +405,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftSample/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q2MF3NHN7B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
@@ -473,14 +472,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.3.9;
-			};
-		};
-		CE76C74C2D2D59830085F3E6 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/aman-capg/swift-webrtc-sdk.git";
-			requirement = {
-				branch = "WEBRTC-167";
-				kind = branch;
 			};
 		};
 		CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {

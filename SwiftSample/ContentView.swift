@@ -73,18 +73,6 @@ struct ContentView: View {
                                 terminateCall: self.terminateCall,
                                 onSendDTMF: self.onSendDTMF)
                 Spacer()
-//                NavigationLink( destination: RingingView(result: $resultFromRingingScreen, number: $phoneNumber),isActive: $isSecondViewActive){
-//                    Text("Go to Second Screen")
-//                        .font(.title)
-//                        .padding()
-//                        .background(Color.blue)
-//                        .foregroundColor(.white)
-//                        .cornerRadius(10)
-//                }.onChange(of: isSecondViewActive){newValue in
-//                    if !newValue {
-//                        print(resultFromRingingScreen)
-//                        // Place additional actions here if needed
-//                    }}
             }
             .padding()
             .navigationBarTitle("Sample App", displayMode: .inline)

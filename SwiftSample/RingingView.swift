@@ -15,7 +15,7 @@ struct RingingView: View {
     
     var body: some View {
         VStack {
-            Text("Call from "+number)
+            Text("Call from +"+number)
                 .font(.title.bold())
                 .foregroundColor(Color.white)
                 .padding(EdgeInsets(top: 60, leading: 10, bottom: 20, trailing: 10))
@@ -23,13 +23,12 @@ struct RingingView: View {
             HStack(content: {
                 AppDialButton(icon: "phone.fill", style: AppDialButtonStyle.green, action: {
                     print("Accept")
-                    result = "Result received from Second Screen = Accept"
-                    presentationMode.wrappedValue.dismiss()
+                    NotificationCenter.default.post(name: NSNotification.Name("AcceptCall"), object: nil)
                 }).padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                 Spacer()
                 AppDialButton(icon: "phone.down.fill", style: AppDialButtonStyle.red,action: {
-                    result = "Result received from Second Screen = Declined"
-                    presentationMode.wrappedValue.dismiss()
+                    print("Declined")
+                    NotificationCenter.default.post(name: NSNotification.Name("DeclinedCall"), object: nil)
                 }).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
             }).padding(EdgeInsets(top: 40, leading: 30, bottom: 60, trailing: 30))
         }
