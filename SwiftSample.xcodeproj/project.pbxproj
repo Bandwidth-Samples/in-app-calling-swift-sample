@@ -192,7 +192,7 @@
 			mainGroup = 77C02EDC2AE71D17004F5D9C;
 			packageReferences = (
 				77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */,
-				F8FFD9592BEE764A00D7E251 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
+				CE6EFFBA2D4CA41700CEED77 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
 			);
 			productRefGroup = 77C02EE62AE71D17004F5D9C /* Products */;
 			projectDirPath = "";
@@ -365,7 +365,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftSample/Preview Content\"";
-				DEVELOPMENT_TEAM = T4948NL6C3;
+				DEVELOPMENT_TEAM = Q2MF3NHN7B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
@@ -412,7 +412,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftSample/Preview Content\"";
-				DEVELOPMENT_TEAM = T4948NL6C3;
+				DEVELOPMENT_TEAM = Q2MF3NHN7B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
@@ -479,9 +479,9 @@
 				minimumVersion = 1.3.9;
 			};
 		};
-		F8FFD9592BEE764A00D7E251 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
+		CE6EFFBA2D4CA41700CEED77 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Bandwidth-Samples/swift-webrtc-sdk";
+			repositoryURL = "https://github.com/Bandwidth-Samples/swift-webrtc-sdk.git";
 			requirement = {
 				branch = main;
 				kind = branch;
