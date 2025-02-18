@@ -2,6 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The application requires microphone access for full call functionality</string>
+	<key>NSCameraUsageDescription</key>
+	<string>The Application requires camera access for full video calls functionality</string>
+	<key>connection.header.pass</key>
+	<string>xxxxxx</string>
+	<key>connection.header.user</key>
+	<string>xxxxx</string>
+	<key>connection.token</key>
+	<string>https://yourauthurl.com</string>
+	<key>connection.port</key>
+	<integer>5061</integer>
+	<key>connection.domain</key>
+	<string>gw.webrtc-app.bandwidth.com</string>
+	<key>account.password</key>
+	<string>+1234567890</string>
+	<key>account.display-name</key>
+	<string>+1234567890</string>
+	<key>account.username</key>
+	<string>+1234567890</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>voip</string>
