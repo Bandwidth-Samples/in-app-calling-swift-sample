@@ -80,3 +80,7 @@ Before invoking functions such as `sendDTMF`, `hold`, `muteAudio`, or `terminate
 2. Open the project in Xcode.
 3. Configure your `Info.plist` with the required background modes as described above.
 4. Customize the code and integrate it into your application as needed.
+5. Add the `Google-Services.plist` file:
+    - Download the Google-Services.plist file from the Firebase console.
+    - Drag and drop the Google-Services.plist file into the root directory of your Xcode project.
+    - Ensure that the file is added to all necessary targets by checking the box next to each target in the file import dialog.
