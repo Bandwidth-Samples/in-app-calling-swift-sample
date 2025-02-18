@@ -7,22 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		772DC7962AF8FD3700041657 /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7952AF8FD3700041657 /* BandwidthSDK */; };
-		772DC7982AF8FD3700041657 /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7972AF8FD3700041657 /* MVWebRTCFramework */; };
-		772DC79A2AF8FD3700041657 /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7992AF8FD3700041657 /* MVWebRTCInterface */; };
-		772DC79C2AF8FD3700041657 /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC79B2AF8FD3700041657 /* MVWebRTCNativeCall */; };
-		772DC79E2AF8FD3700041657 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC79D2AF8FD3700041657 /* WebRTC */; };
-		772DC7A12AF9409E00041657 /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A02AF9409E00041657 /* BandwidthSDK */; };
-		772DC7A32AF9409E00041657 /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A22AF9409E00041657 /* MVWebRTCFramework */; };
-		772DC7A52AF9409E00041657 /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A42AF9409E00041657 /* MVWebRTCInterface */; };
-		772DC7A72AF9409E00041657 /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A62AF9409E00041657 /* MVWebRTCNativeCall */; };
-		772DC7A92AF9409E00041657 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 772DC7A82AF9409E00041657 /* WebRTC */; };
 		777FDC532AEBEEC400D66965 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 777FDC522AEBEEC400D66965 /* README.md */; };
-		778B03BF2AF57128006F409B /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03BE2AF57128006F409B /* BandwidthSDK */; };
-		778B03C12AF57128006F409B /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03C02AF57128006F409B /* MVWebRTCFramework */; };
-		778B03C32AF57128006F409B /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03C22AF57128006F409B /* MVWebRTCInterface */; };
-		778B03C52AF57128006F409B /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03C42AF57128006F409B /* MVWebRTCNativeCall */; };
-		778B03C72AF57128006F409B /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 778B03C62AF57128006F409B /* WebRTC */; };
 		77C02EE92AE71D17004F5D9C /* SwiftSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C02EE82AE71D17004F5D9C /* SwiftSampleApp.swift */; };
 		77C02EEB2AE71D17004F5D9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C02EEA2AE71D17004F5D9C /* ContentView.swift */; };
 		77C02EED2AE71D18004F5D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C02EEC2AE71D18004F5D9C /* Assets.xcassets */; };
@@ -32,6 +17,16 @@
 		77FA25402AE72F4500CA4C03 /* UINavigationBarUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA253F2AE72F4500CA4C03 /* UINavigationBarUtility.swift */; };
 		77FA25432AE72F5E00CA4C03 /* InfoPlistUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */; };
 		77FA25442AE72F5E00CA4C03 /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */; };
+		CE1476972CE4DC720014B2F0 /* RingingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1476962CE4DC720014B2F0 /* RingingView.swift */; };
+		CEA997B82CEF4FE400959FCA /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997B72CEF4FE400959FCA /* FirebaseCore */; };
+		CEA997BA2CEF4FE400959FCA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997B92CEF4FE400959FCA /* FirebaseFirestore */; };
+		CEA997BC2CEF4FE400959FCA /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997BB2CEF4FE400959FCA /* FirebaseMessaging */; };
+		CEA997BE2CF59EEF00959FCA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA997BD2CF59EE600959FCA /* NotificationManager.swift */; };
+		CED77BE72D1A853800D6A84F /* BandwidthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CED77BE62D1A853800D6A84F /* BandwidthSDK */; };
+		CED77BE92D1A853800D6A84F /* MVWebRTCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = CED77BE82D1A853800D6A84F /* MVWebRTCFramework */; };
+		CED77BEB2D1A853800D6A84F /* MVWebRTCInterface in Frameworks */ = {isa = PBXBuildFile; productRef = CED77BEA2D1A853800D6A84F /* MVWebRTCInterface */; };
+		CED77BED2D1A853800D6A84F /* MVWebRTCNativeCall in Frameworks */ = {isa = PBXBuildFile; productRef = CED77BEC2D1A853800D6A84F /* MVWebRTCNativeCall */; };
+		CED77BEF2D1A853800D6A84F /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = CED77BEE2D1A853800D6A84F /* WebRTC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +43,8 @@
 		77FA253F2AE72F4500CA4C03 /* UINavigationBarUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarUtility.swift; sourceTree = "<group>"; };
 		77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlistUtility.swift; sourceTree = "<group>"; };
 		77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
+		CE1476962CE4DC720014B2F0 /* RingingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingView.swift; sourceTree = "<group>"; };
+		CEA997BD2CF59EE600959FCA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,22 +52,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778B03C32AF57128006F409B /* MVWebRTCInterface in Frameworks */,
-				772DC79A2AF8FD3700041657 /* MVWebRTCInterface in Frameworks */,
-				772DC7A52AF9409E00041657 /* MVWebRTCInterface in Frameworks */,
-				772DC7A32AF9409E00041657 /* MVWebRTCFramework in Frameworks */,
-				772DC79E2AF8FD3700041657 /* WebRTC in Frameworks */,
-				772DC7A12AF9409E00041657 /* BandwidthSDK in Frameworks */,
-				772DC7982AF8FD3700041657 /* MVWebRTCFramework in Frameworks */,
-				772DC7A72AF9409E00041657 /* MVWebRTCNativeCall in Frameworks */,
-				778B03C72AF57128006F409B /* WebRTC in Frameworks */,
-				778B03C12AF57128006F409B /* MVWebRTCFramework in Frameworks */,
-				772DC7962AF8FD3700041657 /* BandwidthSDK in Frameworks */,
-				778B03C52AF57128006F409B /* MVWebRTCNativeCall in Frameworks */,
-				772DC79C2AF8FD3700041657 /* MVWebRTCNativeCall in Frameworks */,
-				772DC7A92AF9409E00041657 /* WebRTC in Frameworks */,
+				CEA997B82CEF4FE400959FCA /* FirebaseCore in Frameworks */,
+				CEA997BA2CEF4FE400959FCA /* FirebaseFirestore in Frameworks */,
+				CED77BEB2D1A853800D6A84F /* MVWebRTCInterface in Frameworks */,
+				CEA997BC2CEF4FE400959FCA /* FirebaseMessaging in Frameworks */,
+				CED77BEF2D1A853800D6A84F /* WebRTC in Frameworks */,
+				CED77BE92D1A853800D6A84F /* MVWebRTCFramework in Frameworks */,
+				CED77BE72D1A853800D6A84F /* BandwidthSDK in Frameworks */,
 				77FA25342AE72C7C00CA4C03 /* AlertToast in Frameworks */,
-				778B03BF2AF57128006F409B /* BandwidthSDK in Frameworks */,
+				CED77BED2D1A853800D6A84F /* MVWebRTCNativeCall in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,10 +98,12 @@
 			children = (
 				77F819882AE7328E00BACE69 /* Info.plist */,
 				77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */,
+				CEA997BD2CF59EE600959FCA /* NotificationManager.swift */,
 				77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */,
 				77FA253F2AE72F4500CA4C03 /* UINavigationBarUtility.swift */,
 				77C02EE82AE71D17004F5D9C /* SwiftSampleApp.swift */,
 				77C02EEA2AE71D17004F5D9C /* ContentView.swift */,
+				CE1476962CE4DC720014B2F0 /* RingingView.swift */,
 				77C02EEC2AE71D18004F5D9C /* Assets.xcassets */,
 				77C02EEE2AE71D18004F5D9C /* SwiftSample.entitlements */,
 				77C02EEF2AE71D18004F5D9C /* Preview Content */,
@@ -146,21 +138,14 @@
 			name = SwiftSample;
 			packageProductDependencies = (
 				77FA25332AE72C7C00CA4C03 /* AlertToast */,
-				778B03BE2AF57128006F409B /* BandwidthSDK */,
-				778B03C02AF57128006F409B /* MVWebRTCFramework */,
-				778B03C22AF57128006F409B /* MVWebRTCInterface */,
-				778B03C42AF57128006F409B /* MVWebRTCNativeCall */,
-				778B03C62AF57128006F409B /* WebRTC */,
-				772DC7952AF8FD3700041657 /* BandwidthSDK */,
-				772DC7972AF8FD3700041657 /* MVWebRTCFramework */,
-				772DC7992AF8FD3700041657 /* MVWebRTCInterface */,
-				772DC79B2AF8FD3700041657 /* MVWebRTCNativeCall */,
-				772DC79D2AF8FD3700041657 /* WebRTC */,
-				772DC7A02AF9409E00041657 /* BandwidthSDK */,
-				772DC7A22AF9409E00041657 /* MVWebRTCFramework */,
-				772DC7A42AF9409E00041657 /* MVWebRTCInterface */,
-				772DC7A62AF9409E00041657 /* MVWebRTCNativeCall */,
-				772DC7A82AF9409E00041657 /* WebRTC */,
+				CEA997B72CEF4FE400959FCA /* FirebaseCore */,
+				CEA997B92CEF4FE400959FCA /* FirebaseFirestore */,
+				CEA997BB2CEF4FE400959FCA /* FirebaseMessaging */,
+				CED77BE62D1A853800D6A84F /* BandwidthSDK */,
+				CED77BE82D1A853800D6A84F /* MVWebRTCFramework */,
+				CED77BEA2D1A853800D6A84F /* MVWebRTCInterface */,
+				CED77BEC2D1A853800D6A84F /* MVWebRTCNativeCall */,
+				CED77BEE2D1A853800D6A84F /* WebRTC */,
 			);
 			productName = SwiftSample;
 			productReference = 77C02EE52AE71D17004F5D9C /* SwiftSample.app */;
@@ -192,7 +177,8 @@
 			mainGroup = 77C02EDC2AE71D17004F5D9C;
 			packageReferences = (
 				77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */,
-				CE6EFFBA2D4CA41700CEED77 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
+				CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CEE70CC52D64BA42008AAF34 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */,
 			);
 			productRefGroup = 77C02EE62AE71D17004F5D9C /* Products */;
 			projectDirPath = "";
@@ -224,8 +210,10 @@
 				77FA253A2AE72E7900CA4C03 /* AppDialButton.swift in Sources */,
 				77C02EEB2AE71D17004F5D9C /* ContentView.swift in Sources */,
 				77FA25442AE72F5E00CA4C03 /* ColorUtility.swift in Sources */,
+				CE1476972CE4DC720014B2F0 /* RingingView.swift in Sources */,
 				77FA25432AE72F5E00CA4C03 /* InfoPlistUtility.swift in Sources */,
 				77FA25402AE72F4500CA4C03 /* UINavigationBarUtility.swift in Sources */,
+				CEA997BE2CF59EEF00959FCA /* NotificationManager.swift in Sources */,
 				77C02EE92AE71D17004F5D9C /* SwiftSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +359,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftSample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The Application requires camera access for full video calls functionality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The application requires microphone access for full call functionality";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -381,7 +371,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -418,6 +408,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftSample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The Application requires camera access for full video calls functionality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The application requires microphone access for full call functionality";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -428,7 +420,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -479,7 +471,15 @@
 				minimumVersion = 1.3.9;
 			};
 		};
-		CE6EFFBA2D4CA41700CEED77 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
+		CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+		CEE70CC52D64BA42008AAF34 /* XCRemoteSwiftPackageReference "swift-webrtc-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Bandwidth-Samples/swift-webrtc-sdk.git";
 			requirement = {
@@ -490,70 +490,45 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		772DC7952AF8FD3700041657 /* BandwidthSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BandwidthSDK;
-		};
-		772DC7972AF8FD3700041657 /* MVWebRTCFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCFramework;
-		};
-		772DC7992AF8FD3700041657 /* MVWebRTCInterface */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCInterface;
-		};
-		772DC79B2AF8FD3700041657 /* MVWebRTCNativeCall */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCNativeCall;
-		};
-		772DC79D2AF8FD3700041657 /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = WebRTC;
-		};
-		772DC7A02AF9409E00041657 /* BandwidthSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BandwidthSDK;
-		};
-		772DC7A22AF9409E00041657 /* MVWebRTCFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCFramework;
-		};
-		772DC7A42AF9409E00041657 /* MVWebRTCInterface */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCInterface;
-		};
-		772DC7A62AF9409E00041657 /* MVWebRTCNativeCall */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCNativeCall;
-		};
-		772DC7A82AF9409E00041657 /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = WebRTC;
-		};
-		778B03BE2AF57128006F409B /* BandwidthSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BandwidthSDK;
-		};
-		778B03C02AF57128006F409B /* MVWebRTCFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCFramework;
-		};
-		778B03C22AF57128006F409B /* MVWebRTCInterface */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCInterface;
-		};
-		778B03C42AF57128006F409B /* MVWebRTCNativeCall */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MVWebRTCNativeCall;
-		};
-		778B03C62AF57128006F409B /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = WebRTC;
-		};
 		77FA25332AE72C7C00CA4C03 /* AlertToast */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 77FA25322AE72C7B00CA4C03 /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
+		};
+		CEA997B72CEF4FE400959FCA /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		CEA997B92CEF4FE400959FCA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CEA997BB2CEF4FE400959FCA /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA997B42CEF251F00959FCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		CED77BE62D1A853800D6A84F /* BandwidthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BandwidthSDK;
+		};
+		CED77BE82D1A853800D6A84F /* MVWebRTCFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCFramework;
+		};
+		CED77BEA2D1A853800D6A84F /* MVWebRTCInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCInterface;
+		};
+		CED77BEC2D1A853800D6A84F /* MVWebRTCNativeCall */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MVWebRTCNativeCall;
+		};
+		CED77BEE2D1A853800D6A84F /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WebRTC;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
