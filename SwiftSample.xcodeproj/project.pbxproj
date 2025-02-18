@@ -18,7 +18,6 @@
 		77FA25432AE72F5E00CA4C03 /* InfoPlistUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */; };
 		77FA25442AE72F5E00CA4C03 /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */; };
 		CE1476972CE4DC720014B2F0 /* RingingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1476962CE4DC720014B2F0 /* RingingView.swift */; };
-		CEA997B62CEF4EF900959FCA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEA997B52CEF4EF900959FCA /* GoogleService-Info.plist */; };
 		CEA997B82CEF4FE400959FCA /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997B72CEF4FE400959FCA /* FirebaseCore */; };
 		CEA997BA2CEF4FE400959FCA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997B92CEF4FE400959FCA /* FirebaseFirestore */; };
 		CEA997BC2CEF4FE400959FCA /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CEA997BB2CEF4FE400959FCA /* FirebaseMessaging */; };
@@ -45,7 +44,6 @@
 		77FA25412AE72F5D00CA4C03 /* InfoPlistUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlistUtility.swift; sourceTree = "<group>"; };
 		77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
 		CE1476962CE4DC720014B2F0 /* RingingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingView.swift; sourceTree = "<group>"; };
-		CEA997B52CEF4EF900959FCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEA997BD2CF59EE600959FCA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +96,6 @@
 		77C02EE72AE71D17004F5D9C /* SwiftSample */ = {
 			isa = PBXGroup;
 			children = (
-				CEA997B52CEF4EF900959FCA /* GoogleService-Info.plist */,
 				77F819882AE7328E00BACE69 /* Info.plist */,
 				77FA25422AE72F5E00CA4C03 /* ColorUtility.swift */,
 				CEA997BD2CF59EE600959FCA /* NotificationManager.swift */,
@@ -198,7 +195,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				777FDC532AEBEEC400D66965 /* README.md in Resources */,
-				CEA997B62CEF4EF900959FCA /* GoogleService-Info.plist in Resources */,
 				77C02EF12AE71D18004F5D9C /* Preview Assets.xcassets in Resources */,
 				77C02EED2AE71D18004F5D9C /* Assets.xcassets in Resources */,
 			);
