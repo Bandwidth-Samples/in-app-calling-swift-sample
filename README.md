@@ -64,6 +64,16 @@ account.username                      # put from number here
 
 Before invoking functions such as `sendDTMF`, `hold`, `muteAudio`, or `terminate`, it is crucial to ensure that the `BandwidthSession` variable is not null. This ensures that your application operates smoothly and without errors.
 
+## Configuring Inbound Calls
+
+- **Overview:** We have used two major capabilities to make the inbound call
+
+    - Caller to Callee & Callback from Callee to Caller
+    - Bridging the both calls to connect caller and callee in a single call
+
+- **Sequence Diagram**
+  ![InboundFLow](bandwidth-inbound-swift.drawio.svg)
+
 ## Getting Started
 
 1. Clone this repository to your local machine.
