@@ -64,9 +64,26 @@ account.username                      # put from number here
 
 Before invoking functions such as `sendDTMF`, `hold`, `muteAudio`, or `terminate`, it is crucial to ensure that the `BandwidthSession` variable is not null. This ensures that your application operates smoothly and without errors.
 
+## Configuring Inbound Calls
+
+- **Overview:** We have used two major capabilities to make the inbound call
+
+    - Caller to Callee & Callback from Callee to Caller
+    - Bridging the both calls to connect caller and callee in a single call
+
+- **Sequence Diagram**
+  ![InboundFLow](bandwidth-inbound-swift.drawio.svg)
+  
+- **Notification Handler Service Sample:**
+  https://github.com/Bandwidth-Samples/in-app-calling-notification-service-demo
+
 ## Getting Started
 
 1. Clone this repository to your local machine.
 2. Open the project in Xcode.
 3. Configure your `Info.plist` with the required background modes as described above.
 4. Customize the code and integrate it into your application as needed.
+5. Add the `Google-Services.plist` file:
+    - Download the Google-Services.plist file from the Firebase console.
+    - Drag and drop the Google-Services.plist file into the root directory of your Xcode project.
+    - Ensure that the file is added to all necessary targets by checking the box next to each target in the file import dialog.

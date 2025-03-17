@@ -26,6 +26,25 @@
 	<array>
 		<string>voip</string>
 		<string>audio</string>
+		<string>remote-notification</string>
+		<string>fetch</string>
+		<string>processing</string>
 	</array>
+	<key>account.display-name</key>
+	<string>+19195615790</string>
+	<key>account.password</key>
+	<string>+19195615790</string>
+	<key>account.username</key>
+	<string>+19195615790</string>
+	<key>connection.domain</key>
+	<string>gw.webrtc-app.bandwidth.com</string>
+	<key>connection.header.pass</key>
+	<string>nswEbViahN5em47</string>
+	<key>connection.header.user</key>
+	<string>vsrivastava_api</string>
+	<key>connection.port</key>
+	<integer>5061</integer>
+	<key>connection.token</key>
+	<string>https://id.bandwidth.com/api/v1/oauth2/token</string>
 </dict>
 </plist>
