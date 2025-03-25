@@ -102,7 +102,6 @@ struct SwiftSampleApp: App {
     @State private var resultFromRingingScreen: String = ""
     @State private var isSecondViewActive: Bool = false
     @StateObject var notificationManager = NotificationManager()
-    private let bandwidthUA = BandwidthUA()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     private let bandwidthUA = BandwidthUA()
     
@@ -238,7 +237,7 @@ struct SwiftSampleApp: App {
     /// Configures the BandwidthUA instance.
     private func configureBandwidthUA() {
         do {
-            try bandwidthUA.configureAudioCodesUA(proxyAddress: extractStringValue(forKey: .connectionDomain),
+            try bandwidthUA.configure(proxyAddress: extractStringValue(forKey: .connectionDomain),
                                                   serverDomain: extractStringValue(forKey: .connectionDomain),
                                                   port: Int32(extractIntValue(forKey: .connectionPort)),
                                                   transport: .tls,
